@@ -9,8 +9,13 @@ const port = 3000;
 
 // definizione della rotta base:
 app.get('/', (req, res) => {
-    res.send('Server del mio blog world');
-    let blog = [
+     res.send('Server del mio blog world');
+   
+});
+
+// definisco la rotta che restituisce i miei post:
+app.get('/bacheca', (req, res) => {
+    let posts = [
         {
             titolo: "Ferrari LaFerrari",
             contenuto: "contenuto 1",
@@ -42,6 +47,8 @@ app.get('/', (req, res) => {
             tags: ["tag1", "tag2", "tag3"]
         },
     ]
+
+    res.json(posts);
 });
 
 
