@@ -7,6 +7,8 @@ const app = express();
 // definisco il numero di rotta:
 const port = 3000;
 
+// configurazione asset statici:
+app.use(express.static('public'));
 
 // definizione della rotta base:
 app.get('/', (req, res) => {
@@ -20,7 +22,7 @@ app.get('/bacheca', (req, res) => {
         {
             titolo: "Ciambellone",
             contenuto: "contenuto 1",
-            immagine:'<ciambellone.jpeg">',
+            immagine:'<img src="ciambellone.jpeg">',
             tags: ["tag1", "tag2", "tag3"]
         },
         {
