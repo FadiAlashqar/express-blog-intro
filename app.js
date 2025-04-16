@@ -7,6 +7,7 @@ const app = express();
 // definisco il numero di rotta:
 const port = 3000;
 
+
 // definizione della rotta base:
 app.get('/', (req, res) => {
      res.send('Server del mio blog world');
@@ -17,33 +18,33 @@ app.get('/', (req, res) => {
 app.get('/bacheca', (req, res) => {
     let posts = [
         {
-            titolo: "Ferrari LaFerrari",
+            titolo: "Ciambellone",
             contenuto: "contenuto 1",
-            immagine:'<img src="Ferrari Laferrari.jpg">',
+            immagine:'<ciambellone.jpeg">',
             tags: ["tag1", "tag2", "tag3"]
         },
         {
-            titolo: "Lamborghini SVJ",
+            titolo: "cracker barbabietola",
             contenuto: "contenuto 2",
-            immagine: '<img src="lamborghini svj.jpg">',
+            immagine: '<img src="cracker_barbabietola.jpeg">',
             tags: ["tag1", "tag2", "tag3"]
         },
         {
-            titolo: "Mclaren P1",
+            titolo: "pane fritto dolce",
             contenuto: "contenuto 3",
-            immagine: '<img src="MclarenP1.avif">',
+            immagine: '<img src="pane_fritto_dolce.jpeg">',
             tags: ["tag1", "tag2", "tag3"]
         },
         {
-            titolo: "Porsche 918",
+            titolo: "pasta barbabietola",
             contenuto: "contenuto 4",
-            immagine: '<img src="porsche 918.webp">',
+            immagine: '<img src="pasta_barbabietola.jpeg">',
             tags: ["tag1", "tag2", "tag3"]
         },
         {
-            titolo: "Bugatti Shiron",
+            titolo: "torta paesana",
             contenuto: "contenuto 5",
-            immagine: '<img src="bugatti shiron.webp">',
+            immagine: '<img src="torta_paesana.jpeg">',
             tags: ["tag1", "tag2", "tag3"]
         },
     ]
